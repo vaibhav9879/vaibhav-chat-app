@@ -1,6 +1,6 @@
 # ✨ Full Stack Realtime Chat App ✨
 
-![Demo App]("https://vaibhav-chat-app.onrender.com")
+Demo App :- https://vaibhav-chat-app.onrender.com
 
 Highlights:
 
