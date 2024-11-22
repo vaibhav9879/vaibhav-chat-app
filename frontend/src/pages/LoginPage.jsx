@@ -4,6 +4,17 @@ import AuthImagePattern from "../components/AuthImagePattern";
 import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
 
+// images
+import chat01 from "../assets/chat01.jpeg";
+import chat02 from "../assets/chat02.jpg";
+import chat03 from "../assets/chat03.jpg";
+import chat04 from "../assets/chat04.jpeg";
+import chat05 from "../assets/chat05.jpeg";
+import chat06 from "../assets/chat06.jpeg";
+import chat07 from "../assets/chat07.jpeg";
+import chat08 from "../assets/chat08.jpeg";
+import chat09 from "../assets/chat09.jpeg";
+
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -51,7 +62,9 @@ const LoginPage = () => {
                   className={`input input-bordered w-full pl-10`}
                   placeholder="you@example.com"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                 />
               </div>
             </div>
@@ -69,7 +82,9 @@ const LoginPage = () => {
                   className={`input input-bordered w-full pl-10`}
                   placeholder="••••••••"
                   value={formData.password}
-                  onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, password: e.target.value })
+                  }
                 />
                 <button
                   type="button"
@@ -85,7 +100,11 @@ const LoginPage = () => {
               </div>
             </div>
 
-            <button type="submit" className="btn btn-primary w-full" disabled={isLoggingIn}>
+            <button
+              type="submit"
+              className="btn btn-primary w-full"
+              disabled={isLoggingIn}
+            >
               {isLoggingIn ? (
                 <>
                   <Loader2 className="h-5 w-5 animate-spin" />
@@ -111,7 +130,20 @@ const LoginPage = () => {
       {/* Right Side - Image/Pattern */}
       <AuthImagePattern
         title={"Welcome back!"}
-        subtitle={"Sign in to continue your conversations and catch up with your messages."}
+        subtitle={
+          "Sign in to continue your conversations and catch up with your messages."
+        }
+        images={[
+          chat02,
+          chat01,
+          chat03,
+          chat04,
+          chat05,
+          chat06,
+          chat07,
+          chat09,
+          chat08,
+        ]}
       />
     </div>
   );
